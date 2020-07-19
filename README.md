@@ -18,3 +18,5 @@
 Date: July 2018 Template
 
 <p>The website can be viewed here: <a href="http://b2wtheme.laurencemabilleau.com/" target="__blank">Visit the site.</a></p>
+
+For Testing only. 
