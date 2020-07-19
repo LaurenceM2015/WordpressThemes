@@ -1,0 +1,28 @@
+.header-blog{
+    height: 85vh;
+    background: linear-gradient(
+        to right bottom,
+        rgba($color-primary, 0.8),
+        rgba($color-secondary, 0.8));
+    
+    background-size: cover;
+    background-position: top;
+
+}
+
+.blog-section{
+    position: relative;
+    .card-columns{
+        .card{
+          
+          //border-bottom: none !important;
+          margin-top: 2.5rem;
+          height: auto !important;
+          box-shadow: none !important;
+        }
+      }
+}
+
+.media{
+  img{width: auto !important;}
+}

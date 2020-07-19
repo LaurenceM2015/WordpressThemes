@@ -1,0 +1,111 @@
+ 
+ #masthead {
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+
+  .embed-responsive {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+  }
+
+  @media (pointer: coarse) and (hover: none) {
+    
+      background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+    
+    iframe {
+      display: none;
+    }
+  }
+
+}
+
+ 
+
+ 
+
+ 
+
+
+ 
+ 
+ /* LAYOUT: Header */
+
+ .masthead {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 35rem;
+    padding: 15rem 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000000 100%), url(../assets/img/bg-masthead.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+
+    .container{padding: 0!important;}
+
+
+    // Small devices (landscape phones, 576px and up)
+    @media (min-width: 576px) { 
+      padding: 15rem 0;
+    }
+   
+  }
+  
+#feature-image{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    height: 95vh;
+    
+}
+
+.carousel-item {
+    height: 75vh;
+    min-height: 350px;
+   
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  
+  
+  
+  

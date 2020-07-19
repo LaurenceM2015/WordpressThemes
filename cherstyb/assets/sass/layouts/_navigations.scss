@@ -1,0 +1,90 @@
+// Styling for the navbar
+/*
+
+*/
+#mainNav {
+  min-height: 56px;
+  background-color: $color-grey;
+  .navbar-toggler {
+    font-size: 80%;
+    padding: 0.75rem;
+    color: $color-primary;
+    border: 1px solid $color-primary;
+    &:focus {
+      outline: none;
+    }
+  }
+  .navbar-brand {
+    color: $color-black;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-right: 0;
+    
+    img{
+      //width: 15rem;
+      height: 5rem;
+    }
+  }
+  .navbar-nav {
+    .nav-item {
+      text-transform: uppercase;
+      &:hover {
+        color: fade(white, 95%);
+        outline: none;
+        background-color: transparent;
+        
+      }
+      &:active,
+      &:focus {
+        outline: none;
+        background-color: transparent;
+      }
+    }
+  }
+  @media (min-width: 992px) {
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out;
+    .navbar-brand {
+      padding: .5rem 0;
+      color: fade-out($color-white, .5);
+    }
+    .nav-link {
+      transition: none;
+      padding: 2rem 1.5rem;
+      color: $color-white;
+      &:hover {
+        color: fade-out($color-white, .25);
+      }
+      &:active {
+        color: white;
+      }
+    }
+    &.navbar-shrink {
+      background-color: $color-white;
+      .navbar-brand {
+        color: $color-black;
+      }
+      .nav-link {
+        color: $color-black;
+        padding: 1.5rem 1.5rem 1.25rem;
+        border-bottom: 0.25rem solid transparent;
+        &:hover {
+          color: $color-primary;
+        }
+        &:active {
+          color: darken($color-primary, 15%);
+        }
+        &.active {
+          color: $color-primary;
+          outline: none;
+          border-bottom: 0.25rem solid $color-primary;
+        }
+      }
+    }
+  }
+}
+
+  

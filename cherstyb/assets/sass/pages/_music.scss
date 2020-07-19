@@ -1,0 +1,117 @@
+#music {
+
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+
+.embed-responsive {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+
+}
+
+
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: $color-black;
+    opacity: 0.5;
+    z-index: 1;
+  }
+
+  @media (pointer: coarse) and (hover: none) {
+  
+    background-image: url('assets/css/img/cbMoreOfYou.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  
+    iframe {
+    display: none ;
+  }
+}
+
+}
+
+.section-music{
+   &__container:nth-child(even){
+     .col-lg-6:nth-child(2){
+     // background: blue;//
+      order: -1;
+    }
+   }
+  
+    &__box{
+      height: 100% !important;
+    }
+
+    &__img{width: 100%;}
+
+    &__text{
+      height: 100% !important;
+      .project-text{
+        padding: 0 1.5rem !important;
+        margin: auto 0;
+        width: 100%;
+      }
+      
+    }
+  
+}
+
+
+
+
+
+
+
+
+
+#music-page{
+  .card-columns{
+    @media (min-width: 75em){
+      -webkit-column-count: 3;
+      -moz-column-count: 3;
+      column-count: 3;
+    }
+
+  }
+
+} 
+
+.projects-section{
+  .project-feature{padding: 2rem;}
+  .project-img{
+    text-align: center;
+  }
+}
+ 
+
+
+
+  

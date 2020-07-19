@@ -1,0 +1,160 @@
+/*=======================================
+            LANGDING PAGE
+========================================*/
+ 
+
+.section-music{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 85vh;
+    color: $color-white;
+    background-attachment: fixed;
+
+
+    @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+            only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+            only screen and (min-width: 125em) {
+       background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(assets/css/img/plusBcadeau.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 85vh;
+        color: $color-white;
+        background-attachment: fixed;
+    font-size: $default-font-size;
+
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+    }
+ 
+}
+
+.parallax-BkgImg-jg{
+    background-color: transparent;
+}
+
+/* SECTION TALKSHOW 
+===============================*/
+
+
+#section-talkshow .card-columns{
+    @media (min-width: 75em){
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+    }
+}
+
+
+
+.section-bkg__img{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/assets/css/img/hero-blog-big-min.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 85vh;
+    color: $color-white;
+    background-attachment: fixed;
+}
+
+
+
+
+.parallax-window {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)) !important;
+    min-height: 85vh !important;
+    position: relative;
+    color: $color-white;
+    background-position-y: top;
+
+    .container{
+        padding-top: inherit;
+        position: relative;
+        z-index: 3;
+    }
+
+    @media (min-width: 700px){
+        min-height: 70vh !important;
+    }
+
+}
+
+
+
+.info{
+    z-index: 2;
+    position: relative;
+}
+
+
+// inline gallery 
+.section-gallery{
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+     }
+     
+     .row > div[class*='col-'] {
+       display: flex;
+     }
+     
+}
+
+.section-gallery-inline {
+    padding: 0 !important;
+    width: 100%;
+
+}
+
+.section-contact{background-color: $color-secondary;}
+
+
+/* Follow me arround The Social Media
+========================================= */
+
+.signup-section {
+    
+    background: linear-gradient(to bottom, #{fade-out($color-black, .9)} 0%,#{fade-out($color-black, .5)} 75%,$color-black 100%), url('../img/bg-signup.jpg');
+    //background-color: #88543f;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover; 
+
+    .social-media {padding-top: 50%; }
+
+    .form-inline {
+        input {
+          box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0,0,0,.1) !important;
+          padding: 1.25rem 2rem;
+          height: auto;
+          font-family: 'Varela Round';
+          font-size: 80%;
+          text-transform: uppercase;
+          letter-spacing: 0.15rem;
+          border: 0;
+        }
+    }
+
+    .social {
+        margin-top: 5rem;
+        a {
+            text-align: center;
+            height: 3rem;
+            width: 3rem;
+            background: #fff;
+            border-radius: 100%;
+            line-height: 3rem;
+            color: rgba($color-primary, 0.9); 
+
+            &:hover {color: rgba($color-secondary, 0.5); }
+
+            a:active {color: $color-white;}
+
+        } 
+    }
+
+}
+
+
+  

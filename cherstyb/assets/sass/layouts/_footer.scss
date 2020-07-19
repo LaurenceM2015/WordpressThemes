@@ -1,0 +1,43 @@
+.footer{
+    background-color: $color-white;
+    border-top: 0.1rem solid $color-primary;
+    text-align: center;
+    padding: 1rem 0;
+
+    .row{
+        align-items: center;
+    }
+
+    &__logo{
+        height: 55px;
+        @include respond(tab-port){ 
+            text-align: left;
+        }
+    }
+
+    &__author{
+        font-size: 100%;
+        @include respond(tab-port){ 
+            text-align: right;
+            font-size: 1rem;
+        }
+    }
+
+    .navbar{
+        .navbar-nav{
+            width: 100%;
+            
+            @include respond(tab-port){
+                justify-content: center;
+            }
+            
+        }
+
+    }
+
+    
+.copywrite{font-size: 1rem;}
+    
+    
+
+}
