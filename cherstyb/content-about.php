@@ -13,7 +13,7 @@
   //$visite_la_page      = get_field('visite_la_page'); // can't found the field
   
   // About Page Feature Image
-  $thumbnail_url	= wp_get_attachment_url( get_post_thumbnail_id(622) );
+  $thumbnail_url	= wp_get_attachment_url( get_post_thumbnail_id(104) );
 
 ?>
  
@@ -27,7 +27,7 @@
         <div class="col-lg-10 align-self-end">
           <h1 class="text-uppercase text-white heading-primary">
             <h2 class="text-white heading-secondary heading-secondary--1">
-            <?php  $my_postid = 622;//This is page id or post id
+            <?php  $my_postid = 104;//This is page id or post id
               $content_post = get_post($my_postid);
               $title= $content_post->post_title;
               $content = $content_post->post_content;
@@ -100,7 +100,7 @@
                   <p class="">Je suis née au Congo Brazzaville d’une mère Congolaise et d’un père Cubain. J’ai grandi dans une famille chrétienne. Comme un enfant qui apprend à marcher, j’ai fait mes premiers pas dans la famille chrétienne avec ma grand-mère qui était une femme passionnée du Seigneur et son œuvre.</p>
                 
                   <div class="btn-cta">
-                    <a role="button" href="" target="_blank" class="btn-text">Visite La Page →</a>
+                    <!--<a role="button" href="" target="_blank" class="btn-text">Visite La Page →</a> -->
                   </div>
                 </div>
 

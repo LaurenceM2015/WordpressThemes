@@ -71,7 +71,7 @@
           <div class="row">
                <div class="col-md-12">
                <div class="btn-cta">
-               <a href="movies.html" type="submit" class="btn btn--primary mx-auto">Visite La Page</a>
+                <!--<a href="movies.html" type="submit" class="btn btn--primary mx-auto">Visite La Page</a> -->
                </div>
                </div>
           </div><!-- ./cta -->

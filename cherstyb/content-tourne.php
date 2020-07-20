@@ -9,9 +9,9 @@
     
     <!-- CHECKING IF FEATURE IMAGE EXISTE -->
     <?php if( has_post_thumbnail() ) { // check for feature image ?>
-        <section id="section-tourne" class="section-stage page-section parallax-window" data-z-index="0" data-parallax="scroll" data-image-src="<?php echo $thumbnail_url; ?>">
-          <div class="container">
-            <div class="row">
+      <section id="section-tourne" class="section-stage page-section parallax-window" data-z-index="0" data-parallax="scroll" data-image-src="<?php echo $thumbnail_url; ?>">
+        <div class="container">
+          <div class="row">
               <div class="col-lg-12 align-self-end">
               <h2 class="heading-secondary text-white">
                 <span class="">Tourné</span>
@@ -26,7 +26,7 @@
               </div>
             </div>
           <div><!-- ./container -->
-        </section> 
+      </section> 
     
     <?php } else { // fallback image ?>
     
@@ -93,7 +93,7 @@
         <div class="row">
           <div class="col-md-12">
             <div class="btn-cta">
-              <a href="tourne.html" type="submit" class="btn btn--primary mx-auto">Visite La Page</a>
+             <!-- <a href="tourne.html" type="submit" class="btn btn--primary mx-auto">Visite La Page</a> -->
             </div>
           </div>
         </div><!-- ./cta -->

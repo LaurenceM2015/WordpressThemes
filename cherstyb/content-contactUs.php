@@ -49,9 +49,10 @@
               </a>
             </div>
 
-            <i class="far fa-envelope fa-2x my-2 text-white"></i>
+          <!--  <i class="far fa-envelope fa-2x my-2 text-white"></i>
             <h2 class="text-white mb-5">Ou Ecrivez Moi</h2>
             <a href="contact.html" type="submit" class="btn btn--primary mx-auto">Contact Me</a>
+          -->
 
           </div>
         </div>

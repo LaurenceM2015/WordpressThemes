@@ -1,6 +1,6 @@
 <?php 
     // Feature Image
-    $thumbnail_url	= wp_get_attachment_url( get_post_thumbnail_id(591) );
+    $thumbnail_url	= wp_get_attachment_url( get_post_thumbnail_id(99) );
 
     // Talk show Hero Section
     $talk_show_heading       = get_field('talk_show_heading');
@@ -30,14 +30,14 @@
       <div class="row h-100 align-items-center justify-content-center text-center">
         <div class="col-lg-10 align-self-end">
         
-        <?php  $my_postid = 591;//This is page id or post id
+        <?php  $my_postid = 99;//This is page id or post id
           $content_post = get_post($my_postid);
           $title= $content_post->post_title;
           $content = $content_post->post_content;
           $content = apply_filters('the_content', $content);
           $content = str_replace(']]>', ']]&gt;', $content);
         ?>
-        <h2 class="text-uppercase text-white heading-primary">
+        <h2 class="heading-secondary heading-secondary--1 text-white">
           <span class="heading-primary--main"><?php echo $title; ?></span>
         </h2>
         
@@ -125,7 +125,7 @@
           <div class="row">
             <div class="col-md-12">
               <div class="btn-cta">
-                <a href="emission.html" type="submit" class="btn btn--primary mx-auto">Visite La Page</a>
+               <!-- <a href="emission.html" type="submit" class="btn btn--primary mx-auto">Visite La Page</a> -->
               </div>
             </div>
           </div><!-- call on action -->
