@@ -35,7 +35,7 @@
 
  <!-- MUSIC SECTION
     ================================================== -->  
-  <section class="music-section">
+  <section id="section-music" class="music-section">
       <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
@@ -177,7 +177,7 @@
       
       <div class="text-center pt-5 col-lg-12">
       <?php // echo $section_music_page_link_text; ?>
-      <a role="button" href="<?php echo $section_music_page_link; ?>" class="btn btn--primary mx-auto btn--animated"><?php echo $page_section_button_text; ?> &rarr;</a>
+     <!-- <a role="button" href="#" class="btn btn--primary mx-auto btn--animated">En Savoir Plus &rarr;</a> -->
       </div>
     </div>
   </div>
