@@ -1,23 +1,44 @@
 <?php 
 	/* Template Name: Mes Tourne */
   get_header('menu2');
+  $thumbnail_url	= wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) );
+
 ?>
 
     <!-- MASTERHEAD
-    ================================================== --> 
-    <header class="masthead h-100 parallax-window" data-z-index="0" data-parallax="scroll" data-image-src="<?php bloginfo('stylesheet_directory'); ?>/assets/css/img/tourne-img.jpg">
-        <div class="container d-flex align-items-center">
-            <div class="mx-auto text-center">
-                <h1 class="text-uppercase text-white heading-primary">
-                    <span class="heading-primary--main">Mes Tournés</span>
-                    <span class="heading-primary--sub">Toute les concert</span>
-                </h1>
-                <div class="btn-cta">
-                    <a href="#section-tourne" type="submit" class="btn btn--primary js-scroll-trigger">Contact Me</a>
+    ================================================== -->
+    <?php if( has_post_thumbnail() ) { // check for feature image ?> 
+        <header class="masthead h-100 parallax-window" data-z-index="0" data-parallax="scroll" data-image-src="<?php echo $thumbnail_url; ?>">
+            <div class="container d-flex align-items-center">
+                <div class="mx-auto text-center">
+                    <h1 class="text-uppercase text-white heading-primary">
+                        <span class="heading-primary--main"><?php the_title(); ?></span>
+                        <span class="heading-primary--sub">Toute les concert</span>
+                    </h1>
+                    <div class="btn-cta">
+                        <a href="#section-tourne" type="submit" class="btn btn--primary js-scroll-trigger">Contact Me</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </header>
+        </header>
+
+    <?php } else { // fallback image ?>
+    
+        <header class="masthead h-100 parallax-window" data-z-index="0" data-parallax="scroll" data-image-src="<?php bloginfo('stylesheet_directory'); ?>/assets/css/img/tourne-img.jpg">
+            <div class="container d-flex align-items-center">
+                <div class="mx-auto text-center">
+                    <h1 class="text-uppercase text-white heading-primary">
+                        <span class="heading-primary--main">Mes Tournés</span>
+                        <span class="heading-primary--sub">Toute les concert ok</span>
+                    </h1>
+                    <div class="btn-cta">
+                        <a href="#section-tourne" type="submit" class="btn btn--primary js-scroll-trigger">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+    <?php } ?>
 
     <!-- GALLERY SECTION
     ================================================== --> 

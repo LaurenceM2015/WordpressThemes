@@ -24,7 +24,7 @@
 
 <!-- MOVIES SECTION
   ================================================== --> 
-  <section id="section-movies" class="section-movies page-section">
+  <section id="movies" class="section-movies page-section">
       <div class="overlay"></div>
       <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
         <source src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/cherstyvideo1.mp4" type="video/mp4">
@@ -48,24 +48,24 @@
         <div class="container">
           <!-- Project One Row -->
             <div class="row justify-content-center no-gutters mb-lg-0">
-               <div class="col-lg-6 embed-responsive embed-responsive-16by9">
-               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ZcaUG_xGnPs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
-               </div>
+              <div class="col-lg-6 embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ZcaUG_xGnPs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
+              </div>
                
-               <div class="col-lg-6 embed-responsive embed-responsive-16by9">
-               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/J4hOdbcy5Ok" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-               </div>
+              <div class="col-lg-6 embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/J4hOdbcy5Ok" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
             </div><!-- ./row one -->
 
           <!-- Project Two Row -->
           <div class="row justify-content-center no-gutters">
-               <div class="col-lg-6 embed-responsive embed-responsive-16by9">
-               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/aGZ6ohejeoM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-               </div>
+              <div class="col-lg-6 embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/aGZ6ohejeoM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
           
-               <div class="col-lg-6 embed-responsive embed-responsive-16by9">
-               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Zj8Ci9PZspc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
-               </div>
+              <div class="col-lg-6 embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Zj8Ci9PZspc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
+              </div>
           </div><!-- ./row two -->
 
           <div class="row">

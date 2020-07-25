@@ -21,7 +21,7 @@
 		<div class="container-fluid">
       <div class="row align-items-center">
         <div class="col-md-4">
-          <p><a href="/"><img class="footer__logo" src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/cbLogo.png" alt="Chersty B"></a></p>
+          <p class="text-left"><a href="/"><img class="footer__logo" src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/cbLogo.png" alt="Chersty B"></a></p>
         </div><!-- end col -->
         <div class="col-md-4">
         <!--

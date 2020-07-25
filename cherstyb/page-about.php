@@ -81,17 +81,17 @@
   <div class="container">
     <div class="row align-items-center no-gutters">
       <div class="col-xl-5 col-lg-7">
-                    <div class="wow fadeInLeft project-img" style="visibility: visible; animation-name: fadeInLeft;">
-                        <!-- If user uploaded image -->
-                        <img class="img-fluid" src="http://localhost:8888/wordpress/wp-content/uploads/2020/05/cbAbout.png" alt="">
-                    
-                    </div>
+          <div class="wow fadeInLeft project-img" style="visibility: visible; animation-name: fadeInLeft;">
+              <!-- If user uploaded image -->
+            <img class="img-fluid" src="http://localhost:8888/wordpress/wp-content/uploads/2020/05/cbAbout.png" alt="">
+          
+          </div>
       </div>
       <div class="col-xl-7 col-lg-5 wow fadeInRight">
-                    <div class="project-text project-text--b-left">
-                    <h3 class="heading">chersty<!-- Qui Est Chersty B Bitsindou--></h3>
-                        <p class="">Je suis née au Congo Brazzaville d’une mère Congolaise et d’un père Cubain. J’ai grandi dans une famille chrétienne. Comme un enfant qui apprend à marcher, j’ai fait mes premiers pas dans la famille chrétienne avec ma grand-mère qui était une femme passionnée du Seigneur et son œuvre. Activement engagée dans la chorale son église, elle m’a communique cette passion pour le Gospel, et c’est ainsi que j’ai commencé à chanter à l’âge de 4 ans. J’ai quitté le Congo à l’âge de 14 ans pour rejoindre ma mère en Allemagne ou j’y suis restée pendant quatre ans.</p>
-                    </div>
+        <div class="project-text project-text--b-left">
+          <h3 class="heading">Qui Est Chersty B Bitsindou</h3>
+          <p class="">Je suis née au Congo Brazzaville d’une mère Congolaise et d’un père Cubain. J’ai grandi dans une famille chrétienne. Comme un enfant qui apprend à marcher, j’ai fait mes premiers pas dans la famille chrétienne avec ma grand-mère qui était une femme passionnée du Seigneur et son œuvre. Activement engagée dans la chorale son église, elle m’a communique cette passion pour le Gospel, et c’est ainsi que j’ai commencé à chanter à l’âge de 4 ans. J’ai quitté le Congo à l’âge de 14 ans pour rejoindre ma mère en Allemagne ou j’y suis restée pendant quatre ans.</p>
+        </div>
       </div><!-- ./desc -->
     </div><!-- ./row -->
                 

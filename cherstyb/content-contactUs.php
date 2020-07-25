@@ -30,8 +30,14 @@
      ================================================== --> 
       <!-- CONTACT SECTION
     ================================================== --> 
-    <section id="signup" class="signup-section page-section h-100 parallax-window" data-z-index="0" data-parallax="scroll" data-image-src="<?php bloginfo('stylesheet_directory'); ?>/assets/css/img/contact.jpg">
-      <div class="container">
+    <section id="contact" class="signup-section page-section h-100 parallax-window" data-z-index="0" data-parallax="scroll" data-image-src="<?php bloginfo('stylesheet_directory'); ?>/assets/css/img/contact.jpg">
+      <div class="container pt-0">
+        <div class="row">
+          <div class="col-lg-12">
+            <h2 class="heading-secondary heading-secondary--1 pb-5 text-white">Contact Us</h2>
+          </div>
+        </div>
+
         <div class="row">
           <div class="col-md-10 col-lg-8 mx-auto text-center">
             <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>

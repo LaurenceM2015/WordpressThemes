@@ -21,7 +21,7 @@
 <!-- FEATURE IMAGE
 	================================================== -->
 <?php if( has_post_thumbnail() ) { // check for feature image ?>
-  <section class="header-blog section-stage page-section h-100 parallax-window" data-z-index="0" data-parallax="scroll" data-image-src="<?php echo $thumbnail_url; ?>">
+  <section id="apropodenous" class="header-blog section-stage page-section h-100 parallax-window" data-z-index="0" data-parallax="scroll" data-image-src="<?php echo $thumbnail_url; ?>">
     <div class="container h-100">
       <div class="row h-100 align-items-center justify-content-center text-center">
         <div class="col-lg-10 align-self-end">
@@ -54,7 +54,7 @@
 
 <?php } else { // fallback image ?>
 
-  <section class="header-blog section-stage page-section h-100 parallax-window" data-z-index="0" data-parallax="scroll" data-image-src="<?php bloginfo('stylesheet_directory'); ?>/assets/css/img/ch-heads3.png">
+  <section id="apropodenous" class="header-blog section-stage page-section h-100 parallax-window" data-z-index="0" data-parallax="scroll" data-image-src="<?php bloginfo('stylesheet_directory'); ?>/assets/css/img/ch-heads3.png">
     <div class="container h-100">
       <div class="row h-100 align-items-center justify-content-center text-center">
         <div class="col-lg-10 align-self-end">
@@ -73,7 +73,7 @@
       </div><!-- ./row -->
         <div class="text-center pt-5">
           <div class="btn-cta">
-            <a href="#" type="submit" class="btn btn--primary js-scroll-trigger">En Savoir Plus</a>
+            <a href="section-profil" type="submit" class="btn btn--primary js-scroll-trigger">En Savoir Plus</a>
           </div>
         </div>
     <div><!-- ./container -->
@@ -89,7 +89,7 @@
             <div class="col-xl-5 col-lg-5">
                 <div class="text-center wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;">
                   <!-- If user uploaded image -->
-                  <img class="img-fluid" src="http://localhost:8888/wordpress/wp-content/uploads/2020/05/cbAbout.png" alt="">
+                  <img class="img-fluid" src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/cbAbout.png" alt="">
                 
                 </div>
             </div>

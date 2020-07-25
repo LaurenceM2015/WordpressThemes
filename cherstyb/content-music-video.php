@@ -1,28 +1,16 @@
 <?php
 
   // Feature Image
-  $thumbnail_url	= wp_get_attachment_url( get_post_thumbnail_id(483) );
+  $thumbnail_url	= wp_get_attachment_url( get_post_thumbnail_id(64) );
   // Section Album
-  $music_album_song_list   = get_field('music_album_song_list');
-  $section_single_image  = get_field('section_single_image');
-  $section_album_and_music_video_heading = get_field('$section_album_and_music_video_heading');
-  //print_r($section_talk_show_subheading);
-  print_r($amazon_music_logo);
+  $section_subheading     = get_field('section_subheading',(64));
+  $section_subdescription = get_field('section_subdescription',(64));
+  
+  $song_list   = get_field('music_album_song_list');
+  $store_link   = get_field('store_link');
+  
+  //print_r($store_link);
 
-  // App Store Link
-  $google_play_music_store_link = get_field('google_play_music_store_link');
-  $imusica_music_store_link      = get_field('imusica_music_store_link');
-  $spotify_music_store_link      = get_field('spotify_music_store_link');
-  $amazon_music_store_link      = get_field('amazon_music_store_link');
-  $deezer_music_store_link      = get_field('deezer_music_store_link');
-  $apple_music_store_link       = get_field('apple_music_store_link');
-
-  $google_play_music_logo  = get_field('google_play_music_logo');
-  $imusica_music_logo      = get_field('imusica_music_logo');
-  $spotify_music_logo      = get_field('spotify_music_logo');
-  $amazon_music_logo       = get_field('amazon_music_logo');
-  $deezer_music_logo       = get_field('deezer_music_logo');
-  $apple_music_logo        = get_field('apple_music_logo');
   
   
   $section_music_page_link     = get_field('section_music_page_link');
@@ -90,11 +78,11 @@
       <div class="row">
         <div class="col-lg-12 align-self-end text-center mb-5">
           <h2 class="heading-secondary heading-secondary--1">
-          <span class="">Le Plus Beau Cadeau</span>
+          <span class=""><?php echo $section_subheading; ?></span>
           </h2>
           <p class="text-black-50 mx-auto mb-5">
-          <span>Musique Religieuse - 2017</span>
-          <span>24 minutes 5 &nbsp; morceaux</span>
+          <span><?php echo $section_subdescription; ?></span>
+         
           </p>
         </div>
       </div> <!-- project Row -->
@@ -102,11 +90,10 @@
       <!-- Project One Row -->
       <div class="row justify-content-center no-gutters section-music__container">
   
-        <?php $loop = new WP_Query( array( 'post_type' => 'post', 'posts_per_page'=>2, 'orderby' => 'post_id', 'order' => 'DESC' ) ); ?>
-        <?php while( $loop->have_posts() ) : $loop->the_post(); 
-         $music_album_song_list   = get_field('music_album_song_list');
-
-        ?>
+        <?php $loop = new WP_Query( array( 'post_type' => 'my_music', 'posts_per_page'=>2, 'orderby' => 'post_id', 'order' => 'DESC' ) ); ?>
+          <?php while( $loop->have_posts() ) : $loop->the_post(); 
+          $song_list   = get_field('song_list');
+          ?>
         <div class="col-lg-6">
           <div class="wow fadeInRight section-music__box">
             <img class="img-fluid section-music__img" src="<?php if ( has_post_thumbnail() ) {the_post_thumbnail_url(); }?>" alt="">
@@ -120,11 +107,7 @@
               <div class="project-text w-100">
               <?php //the_title(); ?>
                 <!--<h4 class="page-header mt-0"></h4> -->
-                <p class="mb-0">
-                  <?php echo $music_album_song_list; ?>
-                  
-                </p>
-                
+                <p class="mb-0"><?php echo $song_list; ?></p>
               </div>
             </div>
           </div>
@@ -138,47 +121,27 @@
     </div> <!-- container -->
 
     <!-- Section Lien -->
-    <div class="container mt-5">
+    <div class="container mt-5 pt-5">
       <div class="row justify-content-center align-items-center">
-        <!-- Apple Music Store -->
+        
+      <?php $loop = new WP_Query( array( 'post_type' => 'stores_link', 'orderby' => 'post_id', 'order' => 'DESC' ) ); ?>
+          <?php while( $loop->have_posts() ) : $loop->the_post(); 
+          $store_link   = get_field('store_link');
+          ?>
+
         <div class="col-md-2 col-sm-4 col-xs-6  lead wow fadeIn">
-          <a href="<?php echo $apple_music_store_link; ?>" target="_blank">
-          <?php if( !empty($apple_music_logo) ) : ?>  
-            <img class="img-fluid d-block mx-auto" src="<?php echo $apple_music_logo['url']; ?>" alt="<?php echo $apple_music_logo['alt']; ?>">
-          <?php endif; ?>
+          <a href="<?php echo $store_link; ?>" target="_blank">
+            <img class="img-fluid d-block mx-auto" src="<?php if ( has_post_thumbnail() ) {the_post_thumbnail_url(); }?>" alt="">
           </a>
         </div>
-        <!-- Amazon Music Store -->
-        <div class="col-md-2 col-sm-4 col-xs-6  lead wow fadeIn">
-          <a href="<?php echo $amazon_music_store_link; ?>" target="_blank">
-          <?php if( !empty($amazon_music_logo) ) : ?>  
-            <img class="img-fluid d-block mx-auto" src="<?php echo $amazon_music_logo['url']; ?>" alt="<?php echo $amazon_music_logo['alt']; ?>">
-          <?php endif; ?>
-          </a>
-        </div>
-        <!-- Google Play Music Store -->
-        <div class="col-md-2 col-sm-4 col-xs-6  lead wow fadeIn">
-          <a href="<?php echo $google_play_music_store_link; ?>" target="_blank">
-          <?php if( !empty($google_play_music_logo) ) : ?>  
-            <img class="img-fluid d-block mx-auto" src="<?php echo $google_play_music_logo['url']; ?>" alt="<?php echo $google_play_music_logo['alt']; ?>">
-          <?php endif; ?>
-          </a>
-        </div>
-        <!-- Spotify Music Store -->
-        <div class="col-md-2 col-sm-4 col-xs-6  lead wow fadeIn">
-          <a href="<?php echo $spotify_music_store_link; ?>" target="_blank">
-          <?php if( !empty($spotify_music_logo) ) : ?>  
-            <img class="img-fluid d-block mx-auto" src="<?php echo $spotify_music_logo['url']; ?>" alt="<?php echo $spotify_music_logo['alt']; ?>">
-          <?php endif; ?>
-          </a>
-        </div>
-      </div>
+        <?php endwhile; wp_reset_query(); ?>
+      </div><!-- ./row -->
 
       
       <div class="text-center pt-5 col-lg-12">
       <?php // echo $section_music_page_link_text; ?>
      <!-- <a role="button" href="#" class="btn btn--primary mx-auto btn--animated">En Savoir Plus &rarr;</a> -->
       </div>
-    </div>
+    </div><!-- ./container -->
   </div>
 </section><!-- Album -->
