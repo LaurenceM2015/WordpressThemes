@@ -1,5 +1,5 @@
 <?php
-
+  $thumbnail_url	= wp_get_attachment_url( get_post_thumbnail_id(10) );
   $section_contact_heading          = get_field('section_contact_heading');
   
   // Contact Details 
@@ -34,7 +34,16 @@
       <div class="container pt-0">
         <div class="row">
           <div class="col-lg-12">
-            <h2 class="heading-secondary heading-secondary--1 pb-5 text-white">Contact Us</h2>
+            <h2 class="heading-secondary heading-secondary--1 pb-5 text-white">
+              <?php  $my_postid = 10;//This is page id or post id
+                $content_post = get_post($my_postid);
+                $title= $content_post->post_title;
+                $content = $content_post->post_content;
+                $content = apply_filters('the_content', $content);
+                $content = str_replace(']]>', ']]&gt;', $content);
+              ?>
+              <span class=""><?php echo $title; ?></span>
+            </h2>
           </div>
         </div>
 

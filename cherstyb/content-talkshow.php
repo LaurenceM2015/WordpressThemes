@@ -67,7 +67,7 @@
 
   <?php } else { // fallback image ?>
     
-      <section id="talkshow" class="parallax-window" data-z-index="0" data-parallax="scroll" data-image-src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/WhatsApp-Image.jpg">
+      <section id="talkshow" class="parallax-window page-section" data-z-index="0" data-parallax="scroll" data-image-src="<?php bloginfo('stylesheet_directory'); ?>/assets/css/img/talkshow.jpg">
 
         <div class="container h-100">
           <div class="row h-100 align-items-center justify-content-center text-center">

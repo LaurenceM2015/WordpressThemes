@@ -28,29 +28,34 @@
 	================================================== -->
   <?php if( has_post_thumbnail() ) { // check for feature image ?>
   
-  <header class="section-stage page-section h-100 parallax-window" data-z-index="0" data-parallax="scroll" data-image-src="<?php echo $thumbnail_url; ?>">
-    <div class="container h-100">
-      <div class="row h-100 align-items-center justify-content-center text-center">
-        <div class="col-lg-10 align-self-end">
-        <h1 class="text-uppercase text-white heading-primary">
-          <span class="heading-primary--main"><?php the_title(); ?></span>
-        </h1>
-        <hr class="divider my-4">
-        </div>
-        <div class="col-lg-8 align-self-baseline">
-        <p class="text-white-75 font-weight-light mb-5"></p>
-        
-        </div>
-      </div>
-    <div>
+  <header class="section-stage page-section parallax-window" data-z-index="0" data-parallax="scroll" data-image-src="<?php echo $thumbnail_url; ?>">
+    
+		<div class="container">
+			<div class="row align-items-center justify-content-center text-center">
+			  <div class="col-lg-10 align-self-end">
+				<h1 class="text-uppercase text-white heading-primary">
+					<span class="heading-primary--main"><?php the_title(); ?></span>
+				</h1>
+				
+			  </div>
+			  <div class="col-lg-8 align-self-baseline">
+				<p class="text-white-75 font-weight-light mb-5">
+          <?php while ( have_posts() ) : the_post(); ?>
+            <?php the_content(); ?>
+          <?php endwhile; // end of the loop ?>
+        </p>
+			   
+			  </div>
+			</div>
+		<div>
   </header>
 
 <?php } else { // fallback image ?>
 	
-	<header class="parallax-window" data-z-index="0" data-parallax="scroll" data-image-src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/WhatsApp-Image.jpg">
+	<header class="section-stage page-section parallax-window" data-z-index="0" data-parallax="scroll" data-image-src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/WhatsApp-Image.jpg">
 
-		<div class="container h-100">
-			<div class="row h-100 align-items-center justify-content-center text-center">
+		<div class="container">
+			<div class="row align-items-center justify-content-center text-center">
 			  <div class="col-lg-10 align-self-end">
 				<h1 class="text-uppercase text-white heading-primary">
 					<span class="heading-primary--main"><?php the_title(); ?></span>
@@ -78,15 +83,15 @@
       <!-- social media -->
       <div class="animated fadeIn  text-center py-5">
         <div class="row my-5 ">
-                        <div class="col-md-4 mb-3 mb-md-0">
-                            <div class="card py-4 h-100">
-                                <div class="card-body text-center">
-                                    <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-                                    <h4 class="text-uppercase m-0">Address</h4>
-                                    <hr class="my-4">
-                                 <div class="small text-black-50">London, United kingdom</div>
-                            </div>
-                        </div>
+          <div class="col-md-4 mb-3 mb-md-0">
+              <div class="card py-4 h-100">
+                  <div class="card-body text-center">
+                      <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                      <h4 class="text-uppercase m-0">Address</h4>
+                      <hr class="my-4">
+                   <div class="small text-black-50">London, United kingdom</div>
+              </div>
+          </div>
         </div>
         <div class="col-md-4 mb-3 mb-md-0">
           <div class="card py-4 h-100">
