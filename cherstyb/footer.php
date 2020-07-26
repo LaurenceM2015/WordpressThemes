@@ -24,15 +24,7 @@
           <p class="text-left"><a href="/"><img class="footer__logo" src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/cbLogo.png" alt="Chersty B"></a></p>
         </div><!-- end col -->
         <div class="col-md-4">
-        <!--
-          <nav class="text-center secondary-navbar navbar navbar-expand-sm">
-            <ul class="navbar-nav">
-              <li class="nav-item"><a href="" class="nav-link">Music</a></li>
-              <li class="nav-item"><a href="" class="nav-link">Emission</a></li>
-              <li class="nav-item"><a href="" class="nav-link">Mes Enfo</a></li>
-            </ul>
-          </nav>
--->
+    
             <!-- The WordPress Primary Menu -->
 		<?php wp_nav_menu(
 			array(
